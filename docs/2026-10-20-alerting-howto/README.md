@@ -192,11 +192,15 @@ on the managed cluster instead. It forwards user workload alerts if the
 `openshift.io/prometheus-rule-evaluation-scope: leaf-prometheus`, which keeps
 the rule away from the Thanos Ruler
 ([ACM 2.17, Forwarding your alerts][acm-forward]).
+With this label the rule is evaluated only by the user workload Prometheus, so
+it can only use metrics that the project itself exposes through a
+`ServiceMonitor` or `PodMonitor`, not platform metrics such as
+kube-state-metrics. The project example above would never fire with the label.
 
 ### Check that a metric alert fires
 
 1. Check that the rule was accepted:
-   `oc get alertingrule -n openshift-monitoring`,
+   `oc get alertingrule.monitoring.openshift.io -n openshift-monitoring`,
    `oc get prometheusrule -n project-example`, or, on the hub,
    `oc -n open-cluster-management-observability get configmap thanos-ruler-custom-rules`.
 2. To test the path end to end, add a temporary rule with `expr: vector(1)`
