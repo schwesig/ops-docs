@@ -6,7 +6,8 @@ This document describes one dashboard as it exists in oac-apps
 [`457b659`][main], 2026-10-20. It records why the dashboard exists and why
 each metric is on it. The dashboard strategy (which tool for which audience,
 naming, ownership) is the subject of a separate ADR,
-`adrs/<date>-dashboard-strategy`, which is still pending.
+[Dashboard strategy](../../adrs/2026-09-04-dashboard-strategy/), which is
+Proposed and in review in a separate PR.
 
 ## Question and audience
 
@@ -142,15 +143,16 @@ the per-project Grafana.
    for the MCO capacity dashboard. With a 6 hour default range this panel is
    less exposed, but a long range would hit the same effect. #149 does not touch
    this file.
-3. **Owner.** No owner is named. The pending strategy ADR is expected to decide
-   who owns dashboards.
+3. **Owner.** No owner is named. The strategy ADR (Proposed, in review in a
+   separate PR) is expected to decide who owns dashboards.
 4. **Only on dev so far.** No prod project uses it yet. The tenancy filter was
    to be "measured with a real token" on `gavin-test` first (CCI-MOC/oac-apps@9c08828).
    Whether that test happened is not recorded.
 
 ## See also
 
-- `adrs/<date>-dashboard-strategy` (pending): which tool for which audience,
+- [Dashboard strategy](../../adrs/2026-09-04-dashboard-strategy/) (Proposed,
+  in review in a separate PR): which tool for which audience,
   dashboards as code, naming and ownership.
 - https://github.com/CCI-MOC/ops-docs/pull/37: per-project Grafana ADR, the
   decision this dashboard depends on.

@@ -6,7 +6,8 @@ This document describes one dashboard as it exists in oac-apps
 [`457b659`][main], 2026-10-20. It records why the dashboard exists and why
 each metric is on it. The dashboard strategy (which tool for which audience,
 naming, ownership) is the subject of a separate ADR,
-`adrs/<date>-dashboard-strategy`, which is still pending.
+[Dashboard strategy](../../adrs/2026-09-04-dashboard-strategy/), which is
+Proposed and in review in a separate PR.
 
 ## Question and audience
 
@@ -152,12 +153,13 @@ Not recorded in oac-apps. Both renderings were added in CCI-MOC/oac-apps#139.
    documentation for dashboards loaded from ConfigMaps in
    `openshift-config-managed`. It works today, but a console upgrade could
    change it without notice.
-4. **Owner.** No owner is named. The pending strategy ADR is expected to decide
-   who owns dashboards.
+4. **Owner.** No owner is named. The strategy ADR (Proposed, in review in a
+   separate PR) is expected to decide who owns dashboards.
 
 ## See also
 
-- `adrs/<date>-dashboard-strategy` (pending): which tool for which audience,
+- [Dashboard strategy](../../adrs/2026-09-04-dashboard-strategy/) (Proposed,
+  in review in a separate PR): which tool for which audience,
   dashboards as code, naming and ownership.
 - https://github.com/CCI-MOC/ops-docs/pull/36: MCO metrics allowlist ADR.
 - https://github.com/CCI-MOC/ops-docs/pull/37: per-project Grafana ADR,
