@@ -127,8 +127,10 @@ today.
   and the ops-docs document: `mco-capacity`, `project-overview`.
 - Grafana caps a uid at 40 characters, so a uid that includes a project name is hashed, as
   `project-overview` does.
-- Template files are named `<route>-dashboard-<name>.yaml`, as in
-  `perses-dashboard-mco-capacity.yaml` and `console-dashboard-mco-capacity.yaml`.
+- A dashboard defined in its own template file names that file `<route>-dashboard-<name>.yaml`,
+  as in `perses-dashboard-mco-capacity.yaml` and `console-dashboard-mco-capacity.yaml`. The
+  existing exception is `project-overview`, which is defined inline in
+  `charts/user-projects/templates/grafana.yaml`.
 - The display title says what the dashboard shows, in sentence case: "MCO capacity and growth".
 - Copies of one dashboard on different routes share the name.
 
