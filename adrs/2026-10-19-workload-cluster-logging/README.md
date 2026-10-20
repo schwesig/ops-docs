@@ -123,7 +123,7 @@ recreating the existing hosted clusters. We would reconsider it for new clusters
 
 ## Open points
 
-Both points depart from a Red Hat support statement. We record the question here and do not
+Points 1 and 2 each depart from a Red Hat support statement. We record the question here and do not
 decide it. If a point is resolved by changing the configuration, the Decision changes before
 acceptance and the rejected variant moves to Alternatives considered. If it is resolved by keeping
 the configuration, Consequences gets a paragraph that names it as an accepted unsupported
