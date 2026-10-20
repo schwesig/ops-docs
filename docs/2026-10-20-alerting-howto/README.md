@@ -14,8 +14,8 @@ fires, and where the alert goes.
 > [!IMPORTANT]
 > Alerts are evaluated today, but they are not delivered to anyone. oac-apps
 > configures no Alertmanager receivers on any cluster, and log alerts cannot be
-> evaluated yet. See [Where alerts end up today](#where-alerts-end-up-today)
-> and [Open points](#open-points).
+> evaluated yet. See the sections "Where alerts end up today" and "Open
+> points" below.
 
 ## Which path applies where
 
