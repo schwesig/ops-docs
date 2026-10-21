@@ -265,8 +265,8 @@ above wait on them.
 - https://github.com/schwesig/OA_oac-apps/pull/2, the first implementation, and
   https://github.com/schwesig/OA_oac-apps/issues/1, the object storage prerequisites on the dev
   workload clusters.
-- The per-project metrics ADR in ops-docs pull request 37, which makes the same separation by
-  namespace RBAC for metrics.
+- The per-project metrics ADR proposed upstream in the CCI-MOC ops-docs repository, pull request 37
+  (not yet merged), which makes the same separation by namespace RBAC for metrics.
 - Red Hat OpenShift Logging 6.6, OpenShift Container Platform 4.22 and ACM 2.17 documentation,
   linked below.
 
